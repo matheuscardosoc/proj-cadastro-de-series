@@ -50,12 +50,24 @@ namespace DIO.Series
             {
                 Console.Write("Digite o id da série: ");
                 int indiceSerie = int.Parse(Console.ReadLine());
+                Console.WriteLine();
 
-                repositorio.Exclui(indiceSerie);
+                Console.WriteLine("Quer mesmo excluir essa série?");
+                Console.Write("Y para sim / N para não: ");
+                string escolha = Console.ReadLine().ToUpper();
+                
+                if (escolha == "Y")
+                {
+                    repositorio.Exclui(indiceSerie);
+                    Console.WriteLine();
+                    Console.WriteLine("==Série excluida com sucesso!==");
+                }
+                else
+                    Console.WriteLine("Exclusão cancelada!");
             }
             catch (Exception)
             {
-                Console.WriteLine("ID não encontrado, ou digitado de forma errada!");
+                Console.WriteLine("ID ou Escolha digitada de forma errada! Tente novamente.");
                 Console.WriteLine();
             }
         }
