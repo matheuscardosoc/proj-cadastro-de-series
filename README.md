@@ -3,5 +3,6 @@ Projeto desenvolvido em .NET com a Digital Innovation One e Eliézer Zarpelão. 
 
 ### Mudanças feitas até agora:
 - Tratamento de erros e exceções
-- Melhoria na visualização do Menu e no retorno de dados ou informações sobre erros!
-- Pequenas mudanças em trechos de código!
+- Melhoria na visualização do Menu e no retorno de dados ou informações sobre erros
+- Confirmação na hora de excluir uma Série
+- Pequenas mudanças em trechos de código
